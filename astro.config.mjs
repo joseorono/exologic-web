@@ -8,6 +8,7 @@ import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://exologic.com/', // this line is required
   integrations: [sitemap(), tailwind(), mdx()],
   output: "static",
   adapter: vercel({
@@ -16,3 +17,5 @@ export default defineConfig({
     },
   }),
 });
+
+
