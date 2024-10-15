@@ -6,31 +6,21 @@ interface Props {
 const { title } = Astro.props;
 
 // https://code.juliancataldo.com/component/astro-seo-metadata/
-import { SEOMetadata } from 'astro-seo-metadata';
+// Configure SEO
+// https://github.com/onwidget/astrolib/tree/main/packages/seo
+
+
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
-
-		<SEOMetadata
-		siteName={'Le Website'}
-		title={'Le cool title'}
-		description={'Le insightful description'}
-		image={'http://example.com/the_image_url-preferably_absolute.jpg'}
-		favicon={'/favicon.svg'}
-		author="Julian Cataldo"
-		copyright="ISC"
-		astroSitemap={true}
-		canonicalUrl={Astro.url.toString()}
-		type={'website'}
-		astroGenerator={true}
-	  />
-
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<title>{title}</title>
-
+		<link rel="stylesheet" href="/global.css" />
 
 	</head>
 	<body>
@@ -52,7 +42,6 @@ import { SEOMetadata } from 'astro-seo-metadata';
 	html {
 		font-family: system-ui, sans-serif;
 		background: #13151a;
-		background-size: 224px;
 	}
 	code {
 		font-family:
