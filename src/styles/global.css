@@ -28,9 +28,10 @@ body {
 }
 
 .container {
-  max-width: 992px;
+  @apply max-w-xl mx-auto px-4;
   margin: 0 auto;
   padding: 0 1em;
+  @apply max-w-xl mx-auto px-4;
 }
 
 .container-lg {
