@@ -2,6 +2,11 @@
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
+    fontFamily: {
+      display: ["Poppins", "sans-serif"], // Look up the 'Satoshi' font family
+      body: ["Poppins", "sans-serif"],
+      sans: ["Poppins", "sans-serif"],
+    },
     colors: {
       transparent: "transparent",
       current: "currentColor",
@@ -72,7 +77,11 @@ export default {
         950: "#000D1A",
       },
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        satoshi: ["Poppins", "sans-serif"],
+      },
+    },
   },
   plugins: [require("@tailwindcss/typography"), require("daisyui")],
   daisyui: {
