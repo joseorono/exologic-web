@@ -1,0 +1,19 @@
+---
+const title = Astro.props.title || "Section Container";
+const sectionName = Astro.props.sectionName || "section";
+---
+
+<section class="my-20 mx-28">
+  <div class='flex justify-start'>
+    <img src='../../public/assets/icons/ic_section.png' class="max-w-10 mr-2.5">
+    <h4 class='w-full text-heading-4'>
+      {sectionName}
+    </h4>
+  </div>
+  <div>
+    <h2 class='text-heading-2'>
+      {title}
+    </h2>
+  </div>
+  <slot />
+</section>

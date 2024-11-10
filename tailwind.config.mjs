@@ -81,6 +81,27 @@ export default {
       fontFamily: {
         satoshi: ["Poppins", "sans-serif"],
       },
+      fontSize: {
+        // 65px -> ~4rem
+        'heading-1': ['4rem', {
+          lineHeight: '4.375rem', // 70px -> ~4.375rem
+          fontWeight: '700',
+        }],
+        // 40px -> 2.5rem
+        'heading-2': ['2.5rem', {
+          lineHeight: '3.125rem', // 50px -> ~3.125rem
+          fontWeight: '500',
+        }],
+        // 30px -> ~1.875rem
+        'heading-3': ['1.875rem', {
+          lineHeight: '2.188rem', // 35px -> ~2.188rem
+          fontWeight: '500',
+        }],
+        'heading-4': ['1.125rem', { // 18px = 1.125rem
+          lineHeight: '1.333', // 24px/18px = 1.333
+          fontWeight: '500',
+        }],
+      },
     },
   },
   plugins: [require("@tailwindcss/typography"), require("daisyui")],
