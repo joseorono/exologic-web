@@ -1,0 +1,48 @@
+---
+import SectionContainer from "@components/SectionContainer.astro";
+import ServiceCard from "./ServiceCard.astro";
+console.log("Services section loaded");
+---
+
+<SectionContainer
+  title="Discover all the services we offer"
+  sectionName="Our services"
+>
+  <div class="grid gap-4 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1">
+    <ServiceCard
+      title="Corporate Website Development"
+      description={`Our corporate website development service is designed to create effective platforms that reflect your company's identity and mission. \n We focus on intuitive design and optimal user experience, ensuring that your site is not only attractive, but also functional.`}
+      iconUrl="assets/icons/services/circuit.png"
+    />
+    <ServiceCard
+      title="Wordpress Development"
+      description={`Our WordPress development service is designed to create effective platforms that reflect your company's identity and mission. \n We focus on intuitive design and optimal user experience, ensuring that your site is not only attractive, but also functional.`}
+      iconUrl="assets/icons/services/flower.png"
+    />
+    <ServiceCard
+      title="Project Requirement Consulting"
+      description={`Our project requirement consulting service is designed to create effective platforms that reflect your company's identity and mission. \n We focus on intuitive design and optimal user experience, ensuring that your site is not only attractive, but also functional.`}
+      iconUrl="assets/icons/services/integral.png"
+    />
+    <ServiceCard
+      title="Mobile Application Development"
+      description={`Our mobile application development service is designed to create effective platforms that reflect your company's identity and mission. \n We focus on intuitive design and optimal user experience, ensuring that your site is not only attractive, but also functional.`}
+      iconUrl="assets/icons/services/crown.png"
+    />
+    <ServiceCard
+      title="Consulting for business modernization"
+      description={`Our consulting for business modernization service is designed to create effective platforms that reflect your company's identity and mission. \n We focus on intuitive design and optimal user experience, ensuring that your site is not only attractive, but also functional.`}
+      iconUrl="assets/icons/services/circle.png"
+    />
+    <ServiceCard
+      title="Recruiment Consulting"
+      description={`Our recruiment consulting service is designed to create effective platforms that reflect your company's identity and mission. \n We focus on intuitive design and optimal user experience, ensuring that your site is not only attractive, but also functional.`}
+      iconUrl="assets/icons/services/ornament.png"
+    />
+    <ServiceCard
+      title="Training staff in technologies and good practices"
+      description={`Our training staff in technologies and good practices service is designed to create effective platforms that reflect your company's identity and mission. \n We focus on intuitive design and optimal user experience, ensuring that your site is not only attractive, but also functional.`}
+      iconUrl="assets/icons/services/logo.png"
+    />
+  </div>
+</SectionContainer>
