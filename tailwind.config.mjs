@@ -101,6 +101,11 @@ export default {
           lineHeight: '1.333', // 24px/18px = 1.333
           fontWeight: '500',
         }],
+        'text-regular': ['1rem', {
+          lineHeight: '1.25rem', // 20px -> ~1.25rem
+          fontWeight: '400',
+        }],
+
       },
     },
   },
