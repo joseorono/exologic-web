@@ -3,22 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  font-size: 16px; /* 1rem = 16px */
-}
 
 @layer base {
 }
 
-html,
-body {
-  font-size: 16px; /* 1rem = 16px */
-}
-
 @media (max-width: 720px) {
-  body {
-    font-size: 18px;
-  }
+
   main {
     padding: 1em;
   }
@@ -66,4 +56,5 @@ body {
 
 .outlined-button {
   @apply bg-transparent border border-blue-500 text-blue-500 rounded hover:bg-blue-500 hover:text-white transition-colors;
+  min-width: 7rem;
 }
