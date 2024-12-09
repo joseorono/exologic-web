@@ -1,0 +1,105 @@
+
+<div class="main-container max-w-screen-md md:max-w-screen-2xl py-24 md:pl-[125px]">
+
+    <div class="flex-flex-col ml-[24px] mb-[40px]">
+
+        <div class="flex mb-[8px]">
+            <img class="object-contain mr-[10px]" src="../../public/assets/icons/services/gold_integral.png">
+            <p class="text-[#F3F5F7] text-[18px]">Benefits you will have with us</p>
+        </div>
+
+        <h1 class="text-5xl">Why choose us?</h1>
+    </div>
+
+    <section class="splide" aria-label="Why Choose Us">
+        <div class="splide__track">
+          <ul class="splide__list md:gap-[24px]">
+            <li class="splide__slide">
+                <div class="max-w-[455px] lg:max-w-full lg:flex ">
+                  <div class="p-[24px] bg-[#111417] flex-col rounded-lg justify-between leading-normal border-2 border-[#E2C077] hover:border-[#23282F] hover:bg-[#23282F] transition duration-300 group">
+                      <div class="">
+                          <p class="text-sm text-gray-600 flex items-center gap-[2px] mb-[24px]">
+                              <img class="object-cover mr-4 filter transition duration-300 group-hover:brightness-0 group-hover:invert" src="../../public/assets/icons/services/gold_wordpress.png" alt="Avatar of Jonathan Reinink">
+                          </p>
+                              <p class="text-[#F3F5F7] leading-none text-2xl pb-[16px]">WordPress <br>
+                                  Development</p>
+                          <p class="text-[#F3F5F7] font-extralight">Our team specializes in plugin development and WordPress site modernization, ensuring optimal performance and advanced functionality.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+              </li>
+              <li class="splide__slide">
+                <div class="max-w-[455px] lg:max-w-full lg:flex">
+                  <div class="p-[24px] bg-[#111417] flex rounded-lg justify-between leading-normal border-2 border-[#E2C077] hover:border-[#23282F] hover:bg-[#23282F] transition duration-300 group">
+                    <div class="">
+                      <p class="text-sm text-gray-600 flex items-center gap-[2px] mb-[24px]">
+                        <img 
+                          class="object-cover mr-4 filter transition duration-300 group-hover:brightness-0 group-hover:invert" 
+                          src="../../public/assets/icons/services/gold_circuit.png" 
+                          alt="Gold Circuit Icon"
+                        >
+                      </p>
+                      <p class="text-[#F3F5F7] leading-none text-2xl pb-[16px]">Customized <br> Solutions</p>
+                      <p class="text-[#F3F5F7] font-extralight">
+                        We offer custom development of corporate websites and mobile applications, adapting our solutions to the specific needs of your business.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              
+              <li class="splide__slide">
+                <div class="max-w-[455px] lg:max-w-full lg:flex">
+                  <div class="p-[24px] bg-[#111417] flex rounded-lg leading-normal border-2 border-[#E2C077] hover:border-[#23282F] hover:bg-[#23282F] transition duration-300 group">
+                    <div class="">
+                      <p class="text-sm text-gray-600 flex items-center gap-[2px] mb-[24px]">
+                        <img 
+                          class="object-cover mr-4 filter transition duration-300 group-hover:brightness-0 group-hover:invert" 
+                          src="../../public/assets/icons/services/gold_logo.png" 
+                          alt="Gold Circuit Icon"
+                        >
+                      </p>
+                      <p class="text-[#F3F5F7] leading-none text-2xl pb-[16px]">Comprehensive <br> Consulting</p>
+                          <p class="text-[#F3F5F7] font-extralight md:text-[14.8px]">Specialized consulting to determine project requirements and modernize businesses, ensuring that each step is aligned with your strategic objectives.
+                          </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              
+          </ul>
+        </div>
+      </section>
+</div>
+  
+  <script>
+    import Splide from '@splidejs/splide';
+    import '@splidejs/splide/dist/css/splide.min.css';
+  
+    var splide = new Splide( '.splide', {
+    type   : 'loop',
+    arrows : true,
+    perPage: 3,
+    focus  : 'center',
+    perMove: 1,
+    pagination: true,
+    padding: "22px",
+    breakpoints: {
+      768: {
+        padding: "0px",
+        perPage: 1,
+        perMove: 1,
+          }
+    }
+  } );
+  
+  splide.mount();
+  </script>
+
+  <style>
+    .main-container {   
+      background-color: #111417;
+    }
+  </style>
+  
