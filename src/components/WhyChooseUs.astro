@@ -41,7 +41,7 @@
                         >
                       </p>
                       <p class="text-[#F3F5F7] leading-none text-2xl pb-[16px]">Customized <br> Solutions</p>
-                      <p class="text-[#F3F5F7] font-extralight">
+                      <p class="text-[#F3F5F7] font-extralight text-[15px]">
                         We offer custom development of corporate websites and mobile applications, adapting our solutions to the specific needs of your business.
                       </p>
                     </div>
@@ -74,27 +74,26 @@
 </div>
   
   <script>
-    import Splide from '@splidejs/splide';
-    import '@splidejs/splide/dist/css/splide.min.css';
-  
-    var splide = new Splide( '.splide', {
-    type   : 'loop',
-    arrows : true,
-    perPage: 3,
-    focus  : 'center',
-    perMove: 1,
-    pagination: true,
-    padding: "22px",
-    breakpoints: {
-      768: {
-        padding: "0px",
-        perPage: 1,
+  import { initializeSplide } from "src/scripts/splide-init";
+
+    (function() {
+        var splide = initializeSplide( '.splide', {
+        type   : 'loop',
+        arrows : true,
+        perPage: 3,
+        focus  : 'center',
         perMove: 1,
-          }
-    }
-  } );
-  
-  splide.mount();
+        pagination: true,
+        padding: "22px",
+        breakpoints: {
+          768: {
+            padding: "0px",
+            perPage: 1,
+            perMove: 1,
+              }
+        }
+      } );
+    })();     
   </script>
 
   <style>

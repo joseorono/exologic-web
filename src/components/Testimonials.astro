@@ -79,26 +79,25 @@
   </section>
   
   <script>
-    import Splide from '@splidejs/splide';
-    import '@splidejs/splide/dist/css/splide.min.css';
-  
-    var splide = new Splide( '.splide', {
-    type: 'loop',
-    arrows : true,
-    perPage: 3,
-    pagination: true,
-    padding: "32px",
-    breakpoints: {
-      768: {
-        padding: "0px",
-        perPage: 1,
-          },
-          1024: {
-              perPage: 2,
-          },
-    }
-  } );
-  
-  splide.mount();
+    import { initializeSplide } from "src/scripts/splide-init";
+    (function () {    
+      var splide = initializeSplide( '.splide', {
+      type: 'loop',
+      arrows : true,
+      perPage: 3,
+      pagination: true,
+      padding: "32px",
+      breakpoints: {
+        768: {
+          padding: "0px",
+          perPage: 1,
+          perMove1: 1,
+            },
+            1024: {
+                perPage: 2,
+            },
+          }
+        } );
+    })();
   </script>
   
