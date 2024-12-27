@@ -1,13 +1,19 @@
 ---
+import FAQ from '@components/FAQ.astro';
 import Layout from '../layouts/Layout.astro';
 import Card from '@components/Card.astro';
 import Footer from '@components/Footer.astro';
+import Testimonials from '@components/Testimonials.astro';
 import Services from '@sections/home/Services/Services.astro';
+import WhyChooseUs from '@components/WhyChooseUs.astro';
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
 		<Services />
+		<Testimonials />
+		<WhyChooseUs />
+		<FAQ />
 	</main>
 		<Footer />
 </Layout>

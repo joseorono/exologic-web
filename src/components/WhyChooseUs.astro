@@ -11,7 +11,7 @@
         <h1 class="text-5xl">Why choose us?</h1>
     </div>
 
-    <section class="splide" aria-label="Why Choose Us">
+    <section id="splideWhyChooseUs" class="splide" aria-label="Why Choose Us">
         <div class="splide__track">
           <ul class="splide__list md:gap-[24px]">
             <li class="splide__slide">
@@ -34,9 +34,9 @@
                   <div class="p-[24px] bg-[#111417] flex rounded-lg justify-between leading-normal border-2 border-[#E2C077] hover:border-[#23282F] hover:bg-[#23282F] transition duration-300 group">
                     <div class="">
                       <p class="text-sm text-gray-600 flex items-center gap-[2px] mb-[24px]">
-                        <img 
-                          class="object-cover mr-4 filter transition duration-300 group-hover:brightness-0 group-hover:invert" 
-                          src="../../public/assets/icons/services/gold_circuit.png" 
+                        <img
+                          class="object-cover mr-4 filter transition duration-300 group-hover:brightness-0 group-hover:invert"
+                          src="../../public/assets/icons/services/gold_circuit.png"
                           alt="Gold Circuit Icon"
                         >
                       </p>
@@ -48,15 +48,15 @@
                   </div>
                 </div>
               </li>
-              
+
               <li class="splide__slide">
                 <div class="max-w-[455px] lg:max-w-full lg:flex">
                   <div class="p-[24px] bg-[#111417] flex rounded-lg leading-normal border-2 border-[#E2C077] hover:border-[#23282F] hover:bg-[#23282F] transition duration-300 group">
                     <div class="">
                       <p class="text-sm text-gray-600 flex items-center gap-[2px] mb-[24px]">
-                        <img 
-                          class="object-cover mr-4 filter transition duration-300 group-hover:brightness-0 group-hover:invert" 
-                          src="../../public/assets/icons/services/gold_logo.png" 
+                        <img
+                          class="object-cover mr-4 filter transition duration-300 group-hover:brightness-0 group-hover:invert"
+                          src="../../public/assets/icons/services/gold_logo.png"
                           alt="Gold Circuit Icon"
                         >
                       </p>
@@ -67,17 +67,19 @@
                   </div>
                 </div>
               </li>
-              
+
           </ul>
         </div>
       </section>
 </div>
-  
+
   <script>
-  import { initializeSplide } from "src/scripts/splide-init";
+    import { initializeSplide } from "src/scripts/splide-init.js";
 
     (function() {
-        var splide = initializeSplide( '.splide', {
+      console.log("splide init: why choose us");
+
+      let splide = initializeSplide( '#splideWhyChooseUs', {
         type   : 'loop',
         arrows : true,
         perPage: 3,
@@ -92,13 +94,14 @@
             perMove: 1,
               }
         }
-      } );
-    })();     
+      });
+
+      splide?.mount();
+    })();
   </script>
 
   <style>
-    .main-container {   
+    .main-container {
       background-color: #111417;
     }
   </style>
-  
