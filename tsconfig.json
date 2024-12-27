@@ -6,9 +6,8 @@
     "baseUrl": ".",
     "paths": {
       "@components/*": ["src/components/*"],
-      "@assets/*": ["src/public/assets/*"],
-      "@sections/*": ["src/sections/*"],
-    
+      "@assets/*": ["src/assets/*"],
+      "@sections/*": ["src/sections/*"]
     }
   }
 }
